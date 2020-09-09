@@ -25,7 +25,8 @@ self.addEventListener("install", function(event) {
           './sky.jpg',
           './cloud.png',
           './index.html',
-          './script.js'
+          './script.js',
+		  '/fonts.(googleapis|gstatic).com/'
         ]);
       })
       .then(function() {
