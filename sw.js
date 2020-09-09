@@ -26,7 +26,6 @@ self.addEventListener("install", function(event) {
           './cloud.png',
           './index.html',
           './script.js',
-		  '*.woff2'
         ]);
       })
       .then(function() {
