@@ -26,7 +26,7 @@ self.addEventListener("install", function(event) {
           './cloud.png',
           './index.html',
           './script.js',
-		  '/fonts.(googleapis|gstatic).com/'
+		  '*.woff2'
         ]);
       })
       .then(function() {
