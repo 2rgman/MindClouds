@@ -93,7 +93,29 @@ body::after {
 
 html, body {margin: 0; height: 100%; overflow: hidden; direction: rtl;}
 
-
+a.button{
+display:inline-block;
+padding:0.3em 1.2em;
+margin:0.5em;
+border-radius:2em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#FFFFFF;
+background-color:#4eb5f1;
+text-align:center;
+transition: all 0.2s;
+}
+a.button:hover{
+background-color:#4095c6;
+}
+@media all and (max-width:30em){
+a.button{
+display:block;
+margin:0.2em auto;
+}
+}
 
 @keyframes marqueeLeft{
   0% {

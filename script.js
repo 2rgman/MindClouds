@@ -20,7 +20,15 @@ $(document).ready(function(){
 	});
 });
 	
-
+function clearSWCache() {
+	if ('serviceWorker' in navigator) {
+	  caches.keys().then(function(cacheNames) {
+		cacheNames.forEach(function(cacheName) {
+		  caches.delete(cacheName);
+		});
+	  });
+	}
+}
 
 // ServiceWorker is a progressive technology. Ignore unsupported browsers
 if ('serviceWorker' in navigator) {
