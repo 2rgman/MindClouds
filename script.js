@@ -16,7 +16,7 @@ $(document).ready(function(){
 	
 	$('#slider').change(function(event) {
 		console.log(document.querySelector('#slider').value);
-		$(".marquee-inner.to-left").css("animation-duration", 300 - document.querySelector('#slider').value + "s")
+		$(".marquee-inner.to-left").css("animation-duration", 500 - document.querySelector('#slider').value + "s")
 	});
 });
 	
