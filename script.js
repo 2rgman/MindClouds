@@ -13,8 +13,14 @@ $(document).ready(function(){
 		// your event handler
 		$(':offscreen').find("input[type=text], textarea").val("");
 	},1000);
-
+	
+	$('#slider').change(function(event) {
+		console.log(document.querySelector('#slider').value);
+		$(".marquee-inner.to-left").css("animation-duration", 200 - document.querySelector('#slider').value + "s")
+	});
 });
+	
+
 
 // ServiceWorker is a progressive technology. Ignore unsupported browsers
 if ('serviceWorker' in navigator) {
